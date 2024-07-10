@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="images/quiz.ico">
+  <title>QuizBolt</title>
+  <link rel="stylesheet" href="index.css">
+  <style>
+body {
+  background-image: url('images/lee.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <a href="#">QuizBolt</a>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">Home &#127969</a></li>
+          <li><a href="create.html">Create Quiz</a></li>
+          <li><a href="quiz.html">Take Quiz</a></li>
+          <!--<li><a href="#">Manage Quizzes</a></li>-->
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <main> <br><br><br><br><br>
+      <section class="hero">
+        <h2>Welcome to the Online Quiz Maker</h2>
+        <p>Create your own quizzes or take quizzes created by others.</p>
+        <div class="buttons">
+          <button class="take-quiz" data-quiz="general"><a href="create.html" class="btn take-quiz">Create Quiz</a></button>
+          <button class="take-quiz" data-quiz="general"><a href="quiz.html" class="btn take-quiz">Take Quiz</a></button>
+        </div>
+      </section>
+
+      <section class="features">
+        <h2>Key Features</h2>
+        <ul>
+          <li>Create your own quizzes with custom questions and answers</li>
+          <li>Take quizzes created by other users</li>
+          <li>Receive immediate feedback on your quiz performance</li>
+          
+        </ul>
+      </section>
+    </main>
+
+   
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>

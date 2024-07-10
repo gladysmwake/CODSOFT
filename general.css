@@ -1,0 +1,352 @@
+.*{
+	margin: 0;
+	padding:0 ;
+	font-family: 'Poppins', sans-serif;
+	box-sizing: border-box;
+}
+.body{
+	background: pink;
+}
+
+.app{
+	background: white;
+	width: 90%;
+	max-width: 600px;
+	margin: 100px auto 0;
+	border-radius: 10px;
+	padding: 30px;
+
+
+}
+
+.app h1{
+	font-size:25px ;
+	color: black;
+	font-size: 600;
+	border-bottom: 1px solid #333;
+	padding-bottom:30px ;
+}
+
+.quiz{
+	padding: 20px 0;
+}
+
+.quiz h2{
+	font-size: 18px;
+	color: black;
+	font-weight:600 ;
+	
+
+}
+
+.btn{
+	background: white;
+	color:#222 ;
+	font-weight: 500;
+	width: 100%;
+	border: 1px solid #222;
+	padding: 10px;
+	margin: 10px 0;
+	text-align: left;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.btn:hover{
+	background: #222;
+	color: white;
+
+}
+
+#next-btn{
+	background:#001e4d ;
+	color: #fff;
+	font-weight: 500;
+	width:150px ;
+	border: 0;
+	padding: 10px;
+	margin: 20px auto 0;
+	border-radius: 4px;
+	cursor: pointer;
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app {
+  max-width: 600px;
+  width: 100%;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+h1 {
+  color: #333;
+}
+
+.quiz {
+  margin-top: 20px;
+}
+
+#question {
+  margin-bottom: 20px;
+  font-size: 1.2em;
+}
+
+#answer-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  padding: 10px;
+  margin: 5px 0;
+  background-color: powderblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+#next-btn {
+  display: none;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+#next-btn:hover {
+  background-color: #0056b3;
+}
+
+.btn.correct {
+  background-color: #28a745;
+}
+
+.btn.incorrect {
+  background-color: #dc3545;
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+}
+
+#next-btn, #restart-btn {
+  display: none;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s, transform 0.3s;
+  animation: pulse 1.5s infinite;
+}
+
+#next-btn:hover, #restart-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+
+
+
+
+button {
+  margin: 0.5cm;
+}
+.Btn {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  /* overflow: hidden; */
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.svgContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  backdrop-filter: blur(0px);
+  letter-spacing: 0.8px;
+  border-radius: 10px;
+  transition: all 0.3s;
+  border: 1px solid rgba(156, 156, 156, 0.466);
+}
+
+.BG {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #24a1de;
+  z-index: -1;
+  border-radius: 10px;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+.Btn:hover .BG {
+  transform: rotate(35deg);
+  transform-origin: bottom;
+}
+
+.Btn:hover .svgContainer {
+  border: 1px solid rgba(226, 226, 226, 0.466);
+  background-color: rgba(204, 204, 204, 0.466);
+  backdrop-filter: blur(4px);
+}
+
+.Btntwit {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  /* overflow: hidden; */
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.svgContainertwit {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  backdrop-filter: blur(0px);
+  letter-spacing: 0.8px;
+  border-radius: 10px;
+  transition: all 0.3s;
+  border: 1px solid rgba(156, 156, 156, 0.466);
+}
+
+
+
+.Btntwit:hover .BGtwit {
+  transform: rotate(35deg);
+  transform-origin: bottom;
+}
+
+.Btntwit:hover .svgContainertwit {
+  background-color: rgba(156, 156, 156, 0.466);
+  backdrop-filter: blur(4px);
+}
+
+
+
+
+
+.Btnstock {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  /* overflow: hidden; */
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.svgContainerstock {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  backdrop-filter: blur(0px);
+  letter-spacing: 0.8px;
+  border-radius: 10px;
+  transition: all 0.3s;
+  border: 1px solid rgba(156, 156, 156, 0.466);
+}
+
+.BGstock {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #f48024;
+  z-index: -1;
+  border-radius: 10px;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+.Btnstock:hover .BGstock {
+  transform: rotate(35deg);
+  transform-origin: bottom;
+}
+
+.Btnstock:hover .svgContainerstock {
+  background-color: rgba(202, 202, 202, 0.466);
+  backdrop-filter: blur(4px);
+}
+
+
+
+

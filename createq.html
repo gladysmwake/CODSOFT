@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="createq.css">
+    <title>Quiz Creator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Create Your Quiz</h1>
+        <form id="quiz-form">
+            <label for="question">Question:</label>
+            <input type="text" id="question" required>
+            <label for="answer1">Answer 1:</label>
+            <input type="text" id="answer1" required>
+            <label for="answer2">Answer 2:</label>
+            <input type="text" id="answer2" required>
+            <label for="answer3">Answer 3:</label>
+            <input type="text" id="answer3" required>
+            <label for="answer4">Answer 4:</label>
+            <input type="text" id="answer4" required>
+            <label for="correct-answer">Correct Answer (1-4):</label>
+            <input type="number" id="correct-answer" min="1" max="4" required>
+            <button type="submit">Add Question</button>
+        </form>
+        <div id="quiz-preview"></div>
+    </div>
+    <script src="createq.js"></script>
+</body>
+</html>
